@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazeel Ahamad | MCA Data Science Student | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">NAZEEL AHAMAD</a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#technologies" class="nav-link">Technologies</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-profile-image">
+                    <img src="nazeel.jpg" alt="Nazeel Ahamad Profile" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="profile-placeholder" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <h1 class="hero-title"><span class="gradient-text">Nazeel Ahamad</span></h1>
+                <div class="hero-subtitle-container">
+                    <span class="hero-subtitle-prefix">I'm a</span>
+                    <span class="hero-subtitle-typed" id="typedText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-institution">MCA (Hons) Data Science Student</p>
+                <p class="hero-institution">Lovely Professional University</p>
+                <p class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Calicut, India</span>
+                </p>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/nazeelahamad/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hero-social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Nazeelahamad" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hero-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-folder-open"></i> View Projects</a>
+                    <a href="NazeelResume.pdf" download="Nazeel_Ahamad_Resume.pdf" class="btn btn-secondary"><i class="fas fa-download"></i> Download Resume</a>
+                    <a href="#contact" class="btn btn-text">Contact Me <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid-2x2">
+                <div class="stat-card-new">
+                    <div class="stat-icon-new">📊</div>
+                    <div class="stat-number-new">2+</div>
+                    <div class="stat-label-new">PROJECTS COMPLETED</div>
+                </div>
+                <div class="stat-card-new">
+                    <div class="stat-icon-new">💼</div>
+                    <div class="stat-number-new">3+</div>
+                    <div class="stat-label-new">PROJECTS BUILT</div>
+                </div>
+                <div class="stat-card-new">
+                    <div class="stat-icon-new">🎓</div>
+                    <div class="stat-number-new">4+</div>
+                    <div class="stat-label-new">CERTIFICATIONS</div>
+                </div>
+                <div class="stat-card-new">
+                    <div class="stat-icon-new">🏆</div>
+                    <div class="stat-number-new">2025</div>
+                    <div class="stat-label-new">YEAR</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p><strong>Data Science Student &amp; Full-Stack Developer</strong> pursuing MCA (Hons) in Data Science at Lovely Professional University. Passionate about building intelligent systems that solve real-world problems through innovative technology and data-driven solutions.</p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h4>Education</h4>
+                                <p>BCA + MCA (Hons)</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h4>Projects</h4>
+                                <p>3+ Built</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h4>Projects</h4>
+                                <p>2+ Completed</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h4>Certifications</h4>
+                                <p>4 Professional</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-quick-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:nazeelahamad04@gmail.com">nazeelahamad04@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+91884851532">+91 884851532</a>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Calicut, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge current">Currently Pursuing</div>
+                        <h3>Master of Computer Applications (MCA Hons) - Data Science</h3>
+                        <div class="timeline-institution">
+                            <i class="fas fa-university"></i>
+                            <span>Lovely Professional University</span>
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Punjab, India</span>
+                        </div>
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>2024 - Present</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge completed">Completed</div>
+                        <h3>Bachelor of Computer Application (BCA)</h3>
+                        <div class="timeline-institution">
+                            <i class="fas fa-university"></i>
+                            <span>Nirmala College Muvattupuzha</span>
+                        </div>
+                        <div class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kerala, India</span>
+                        </div>
+                        <div class="timeline-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>September 2022 - 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Achievement Section -->
+    <section id="achievement" class="section achievement-section">
+        <div class="container">
+            <div class="featured-achievement-card">
+                <div class="achievement-icon-large">🏆</div>
+                <div class="achievement-content">
+                    <div class="achievement-badge">Featured Achievement</div>
+                    <h2 class="achievement-title">HackManthan 2025</h2>
+                    <p class="achievement-subtitle">24-Hour Hackathon Participation</p>
+                    <p class="achievement-description">Successfully participated and showcased innovation in building real-world tech solutions during this prestigious hackathon event at Lovely Professional University.</p>
+                    <div class="achievement-stats-mini">
+                        <span><i class="fas fa-clock"></i> 24 Hours</span>
+                        <span><i class="fas fa-users"></i> Team Collaboration</span>
+                        <span><i class="fas fa-trophy"></i> Innovation Excellence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="section technologies-section">
+        <div class="container">
+            <h2 class="section-title">Technologies &amp; Tools</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Languages</h3>
+                    <div class="tech-grid">
+                        <div class="tech-badge"><span class="tech-icon">🐍</span>Python</div>
+                        <div class="tech-badge"><span class="tech-icon">☕</span>Java</div>
+                        <div class="tech-badge"><span class="tech-icon">⚙️</span>C</div>
+                        <div class="tech-badge"><span class="tech-icon">⚙️</span>C++</div>
+                        <div class="tech-badge"><span class="tech-icon">🔧</span>PHP</div>
+                        <div class="tech-badge"><span class="tech-icon">✨</span>JavaScript</div>
+                        <div class="tech-badge"><span class="tech-icon">🎨</span>HTML</div>
+                        <div class="tech-badge"><span class="tech-icon">🎨</span>CSS</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Frontend</h3>
+                    <div class="tech-grid">
+                        <div class="tech-badge"><span class="tech-icon">📱</span>HTML5</div>
+                        <div class="tech-badge"><span class="tech-icon">🎨</span>CSS3</div>
+                        <div class="tech-badge"><span class="tech-icon">🅱️</span>Bootstrap</div>
+                        <div class="tech-badge"><span class="tech-icon">📱</span>Responsive Design</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Backend</h3>
+                    <div class="tech-grid">
+                        <div class="tech-badge"><span class="tech-icon">🔧</span>PHP</div>
+                        <div class="tech-badge"><span class="tech-icon">🔌</span>RESTful APIs</div>
+                        <div class="tech-badge"><span class="tech-icon">⚡</span>Backend Development</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Databases</h3>
+                    <div class="tech-grid">
+                        <div class="tech-badge"><span class="tech-icon">🗄️</span>MySQL</div>
+                        <div class="tech-badge"><span class="tech-icon">📊</span>Database Design</div>
+                        <div class="tech-badge"><span class="tech-icon">🔧</span>Database Management</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title">AI/ML</h3>
+                    <div class="tech-grid">
+                        <div class="tech-badge"><span class="tech-icon">🤖</span>Machine Learning</div>
+                        <div class="tech-badge"><span class="tech-icon">💬</span>NLP</div>
+                        <div class="tech-badge"><span class="tech-icon">📊</span>Data Analytics</div>
+                        <div class="tech-badge"><span class="tech-icon">📚</span>Python Libraries</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3 class="tech-category-title">Tools</h3>
+                    <div class="tech-grid">
+                        <div class="tech-badge"><span class="tech-icon">📦</span>Git</div>
+                        <div class="tech-badge"><span class="tech-icon">💻</span>VS Code</div>
+                        <div class="tech-badge"><span class="tech-icon">📓</span>Jupyter</div>
+                        <div class="tech-badge"><span class="tech-icon">🗄️</span>phpMyAdmin</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">💻</span>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><span class="skill-icon">☕</span> Java</span>
+                        <span class="skill-tag"><span class="skill-icon">⚙️</span> C</span>
+                        <span class="skill-tag"><span class="skill-icon">⚙️</span> C++</span>
+                        <span class="skill-tag"><span class="skill-icon">🐍</span> Python</span>
+                        <span class="skill-tag"><span class="skill-icon">🔧</span> PHP</span>
+                        <span class="skill-tag"><span class="skill-icon">✨</span> JavaScript</span>
+                        <span class="skill-tag"><span class="skill-icon">🎨</span> HTML</span>
+                        <span class="skill-tag"><span class="skill-icon">🎨</span> CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🗄️</span>
+                        <h3>Database &amp; Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><span class="skill-icon">🗄️</span> MySQL</span>
+                        <span class="skill-tag"><span class="skill-icon">📊</span> Database Design</span>
+                        <span class="skill-tag"><span class="skill-icon">🔌</span> RESTful APIs</span>
+                        <span class="skill-tag"><span class="skill-icon">⚡</span> Backend Development</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🌐</span>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><span class="skill-icon">📱</span> Responsive Design</span>
+                        <span class="skill-tag"><span class="skill-icon">🎨</span> Front-end</span>
+                        <span class="skill-tag"><span class="skill-icon">🚀</span> Full-stack</span>
+                        <span class="skill-tag"><span class="skill-icon">⚛️</span> Modern Frameworks</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🤖</span>
+                        <h3>Data Science</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><span class="skill-icon">🤖</span> Machine Learning</span>
+                        <span class="skill-tag"><span class="skill-icon">📊</span> Data Analytics</span>
+                        <span class="skill-tag"><span class="skill-icon">💬</span> Natural Language Processing</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🛠️</span>
+                        <h3>Tools &amp; Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><span class="skill-icon">📦</span> Git</span>
+                        <span class="skill-tag"><span class="skill-icon">💻</span> VS Code</span>
+                        <span class="skill-tag"><span class="skill-icon">📓</span> Jupyter Notebooks</span>
+                        <span class="skill-tag"><span class="skill-icon">🗄️</span> phpMyAdmin</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🎯</span>
+                        <h3>Professional Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><span class="skill-icon">🧩</span> Problem Solving</span>
+                        <span class="skill-tag"><span class="skill-icon">👥</span> Team Leadership</span>
+                        <span class="skill-tag"><span class="skill-icon">📋</span> Project Management</span>
+                        <span class="skill-tag"><span class="skill-icon">💬</span> Technical Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="portfolio-grid">
+                <div class="project-card" data-project="0">
+                    <div class="project-image">
+                        <div class="project-gradient gradient-blue">
+                            <span class="project-icon">🛒</span>
+                        </div>
+                        <div class="project-view-details">
+                            <span class="view-details-text">View Details →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Payment Gateway Integration</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Nazeelahamad/miniproject-puppyemporium" class="project-btn btn-github" target="_blank" rel="noopener noreferrer">
+                                View Code →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <div class="project-gradient gradient-purple">
+                            <span class="project-icon">🤖</span>
+                        </div>
+                        <div class="project-view-details">
+                            <span class="view-details-text">View Details →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Mental Health Chatbot</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Nazeelahamad/aichatbot-mentalhealth" class="project-btn btn-github" target="_blank" rel="noopener noreferrer">
+                                View Code →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card" data-cert="0" data-file="Nazeel-hackathon-certificate.jpg" data-type="image">
+                    <div class="cert-thumbnail">
+                        <img src="Nazeel-hackathon-certificate.jpg" alt="HackManthan 2025 Certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cert-icon" style="display: none;">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>HackManthan 2025 - Participation Certificate</h3>
+                        <p class="cert-issuer"><i class="fas fa-award"></i> EventEye, GeeksforGeeks, Lovely Professional University</p>
+                        <p class="cert-date"><i class="fas fa-calendar"></i> October 2025</p>
+                        <a href="#" class="cert-view-link view-cert-btn">View Credential →</a>
+                    </div>
+                </div>
+                <div class="certificate-card" data-cert="1" data-file="c-certificatee.jpg" data-type="image">
+                    <div class="cert-thumbnail">
+                        <img src="c-certificatee.jpg" alt="NPTEL C Programming Certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cert-icon" style="display: none;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Problem Solving Through Programming in C</h3>
+                        <p class="cert-issuer"><i class="fas fa-award"></i> NPTEL (IIT Kharagpur)</p>
+                        <p class="cert-date"><i class="fas fa-calendar"></i> January - April 2023</p>
+                        <a href="#" class="cert-view-link view-cert-btn">View Credential →</a>
+                    </div>
+                </div>
+                <div class="certificate-card" data-cert="3" data-file="hackmanthangrowbinar.png" data-type="image">
+                    <div class="cert-thumbnail">
+                        <img src="hackmanthangrowbinar.png" alt="hackmanthangrowbinar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="cert-icon" style="display: none;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>HackManthan 2025 - Workshop Participation</h3>
+                        <p class="cert-issuer"><i class="fas fa-award"></i>  EventEye, GeeksforGeeks, Growbinar</p>
+                        <p class="cert-date"><i class="fas fa-calendar"></i> October 3-4, 2025</p>
+                        <a href="#" class="cert-view-link view-cert-btn">View Credential →</a>
+                    </div>
+                </div>
+                <div class="certificate-card" data-cert="2" data-file="ibmskillbuild.pdf" data-type="pdf">
+                    <div class="cert-thumbnail">
+                        <div class="cert-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>IBM SkillsBuild Winter Certification - Data Analytics</h3>
+                        <p class="cert-issuer"><i class="fas fa-award"></i> IBM SkillsBuild &amp; CSRBOX</p>
+                        <p class="cert-date"><i class="fas fa-calendar"></i> December 2024 - January 2025</p>
+                        <a href="#" class="cert-view-link view-cert-btn">View Credential →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="project-modal-overlay"></div>
+        <div class="project-modal-content">
+            <button class="project-modal-close" id="projectModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="project-modal-body">
+                <div class="project-modal-header">
+                    <div class="project-modal-icon" id="projectModalIcon">🛒</div>
+                    <h2 class="project-modal-title" id="projectModalTitle">Project Title</h2>
+                </div>
+                <p class="project-modal-description" id="projectModalDescription">Project description goes here...</p>
+                <div class="project-modal-section">
+                    <h3 class="project-modal-section-title"><i class="fas fa-code"></i> Technologies Used</h3>
+                    <div class="project-modal-tech" id="projectModalTech"></div>
+                </div>
+                <div class="project-modal-section">
+                    <h3 class="project-modal-section-title"><i class="fas fa-star"></i> Key Features</h3>
+                    <ul class="project-modal-features" id="projectModalFeatures"></ul>
+                </div>
+                <div class="project-modal-section">
+                    <h3 class="project-modal-section-title"><i class="fas fa-chart-line"></i> Project Impact</h3>
+                    <p class="project-modal-impact" id="projectModalImpact">Impact description</p>
+                </div>
+                <div class="project-modal-actions">
+                    <a href="#" id="projectModalGithub" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-nav">
+                <button class="modal-nav-btn" id="prevCert">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="modal-nav-btn" id="nextCert">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cert-image-container" id="certImageContainer">
+                    <img id="certImage" src="" alt="Certificate" style="display: none;">
+                    <div class="cert-placeholder" id="certPlaceholder">
+                        <i class="fas fa-certificate"></i>
+                        <p>Loading certificate...</p>
+                    </div>
+                </div>
+                <div class="cert-modal-details">
+                    <h2 id="modalTitle">Certificate Title</h2>
+                    <p class="modal-issuer" id="modalIssuer">Issuer</p>
+                    <p class="modal-date" id="modalDate">Date</p>
+                    <p class="modal-description" id="modalDescription">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact Section - PREMIUM REDESIGN -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Build Something Amazing Together</h2>
+            <p class="contact-intro">Have a project in mind or want to collaborate? I'd love to hear from you and discuss how we can create something exceptional!</p>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <h3 class="contact-form-title">Send Me a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="from_name" class="form-control" placeholder="John Doe" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" name="from_email" class="form-control" placeholder="john@example.com" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Project Collaboration" required>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Tell me about your project or idea..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full-width"><i class="fas fa-paper-plane"></i> Send Message</button>
+                        <div class="form-success" id="formSuccess"><i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.</div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <div>
+                                <h4><i class="fas fa-envelope"></i> Email</h4>
+                                <a href="mailto:nazeelahamad04@gmail.com">nazeelahamad04@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div>
+                                <h4><i class="fas fa-phone"></i> Phone</h4>
+                                <a href="tel:+91884851532">+91 884 851 532</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div>
+                                <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+                                <p>Calicut, Kerala, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/nazeelahamad/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Nazeelahamad" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>NAZEEL AHAMAD</h3>
+                    <p>Building Intelligent Systems. Solving Real-World Problems.</p>
+                </div>
+                <div class="footer-cta">
+                    <h4>Let's Work Together</h4>
+                    <a href="mailto:nazeelahamad04@gmail.com" class="btn btn-primary btn-footer"><i class="fas fa-envelope"></i> Get In Touch</a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certificates">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/nazeelahamad/" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/Nazeelahamad" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:nazeelahamad04@gmail.com"><i class="fas fa-envelope"></i> nazeelahamad04@gmail.com</a></li>
+                        <li><a href="tel:+91884851532"><i class="fas fa-phone"></i> +91 884851532</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Calicut, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Nazeel Ahamad. All rights reserved.</p>
+                <p class="footer-updated">Last updated: October 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            // https://dashboard.emailjs.com/admin
+            emailjs.init("qmvVRnyoZ1WP688Nm");
+        })();
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
+
